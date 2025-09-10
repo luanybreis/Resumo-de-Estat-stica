@@ -7,15 +7,15 @@ Distribuição de Frequência – Resumo
   Fi = f1 + f2 + ... + fi
 - Frequência relativa (fri):
 
-     fi
-fri = ----
-      n
+       fi
+fri = ────
+       n
 
 - Frequência percentual (fri%):
 
-       fi
-fri(%) = ---- * 100
-        n
+          fi
+fri(%) = ──── * 100
+          n
 
 - Frequência percentual acumulada (Fi%): soma das porcentagens até a classe i.
 
@@ -30,9 +30,9 @@ A = Xmax - Xmin
 
 - Calcular amplitude da classe:
 
-       A
-h = ----
-       k
+     A 
+h = ───
+     k
 
 (usando função teto para arredondar)
 
@@ -45,7 +45,7 @@ Classes: k = 5
 Amplitude total: A = 27 - 18 = 9  
 
        9
-h = ---- ≈ 2
+h = ─────── ≈ 2
        5
 
 Tabela exemplo:
@@ -62,28 +62,28 @@ Idade   | fi | Fi | fri  | fri%  | Fi%
 
 - Média populacional:
 
-       Σ xi
-μ = -------
-        n
+     Σ xi
+μ = ──────
+      n
 
 - Média para dados agrupados:
 
-       Σ (fi * Xi)
-μ = -------------
+     Σ (fi * Xi)
+μ = ────────────
         n
 
 - Mediana: valor central dos dados; para dados agrupados, usar fórmula com limites de classe.
 - Moda: valor mais frequente; para dados agrupados, fórmula envolvendo fi, fi-1 e fi+1.
 - Média ponderada:
 
-       Σ (wi * xi)
-x̄ = -------------
+    Σ (wi * xi)
+x̄ = ────────────
        Σ wi
 
 - Média harmônica:
 
        n
-x̄h = -----
+x̄h = ────────
      Σ (1/xi)
 
 - Média geométrica:
@@ -100,13 +100,13 @@ A = Xmax - Xmin
 - Variância populacional:
 
          Σ (xi - μ)²
-σ²  = ----------------
+σ²  = ────────────────
             N
 
 - Variância amostral:
 
          Σ (xi - x̄)²
-S²  = ----------------
+S²  = ────────────────
            n - 1
 
 - Desvio padrão:
@@ -116,7 +116,7 @@ S²  = ----------------
 - Coeficiente de variação:
 
        σ
-CV = ----   ou   CV = S / x̄
+CV = ────  ou   CV = S / x̄
        μ
 
 --------------------------------------------------
@@ -132,14 +132,14 @@ CV = ----   ou   CV = S / x̄
 
 - Coeficiente de assimetria de Pearson:
 
-x̄ - Mo
-As = ----
-       s
+      x̄ - Mo
+As = ────────
+        s
 
 - Curtose (C):
 
       Q3 - Q1
-C = -------------
+C = ──────────────
      2(P90 - P10)
 
 Interpretação:

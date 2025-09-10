@@ -71,13 +71,13 @@ Fórmulas usuais:
 - Aproximação inicial:
 
        1
-n0 = -----
+n0 = ─────
       E0²
 
 - Ajuste com população finita:
 
-       N * n0
-n  = ---------
+      N * n0
+n  = ─────────
       N + n0
 
 --------------------------------------------------
@@ -91,21 +91,21 @@ Tipos de frequência:
 
 - Frequência relativa (fri):
 
-     fi
-fri = ----
-      n
+      fi
+fri = ──
+       n
 
 - Frequência relativa percentual (fri%):
 
-       fi
-fri(%) = ---- * 100
-        n
+          fi
+fri(%) = ────* 100
+          n
 
 - Frequência acumulada relativa:
 
-     Fi
-Fri = ----
-      n
+       Fi
+Fri = ────
+       n
 
 Exemplo com notas (n=20):
 5, 6, 6, 7, 8, 8, 8, 9, 5, 7, 6, 9, 10, 5, 7, 8, 6, 7, 9, 10
@@ -124,14 +124,14 @@ Total| 20 | -- | 1,00 | 100%
 Medidas de Tendência Central
 - Média aritmética simples:
 
-       Σ xi
-x̄ = -------
-        n
+      Σ xi
+x̄ = ───────
+       n
 
 - Média ponderada:
 
-       Σ (xi * wi)
-x̄ = -------------
+     Σ (xi * wi)
+x̄ = ─────────────
        Σ wi
 
 - Moda (Mo): valor mais frequente.
@@ -146,7 +146,7 @@ AT = Xmax - Xmin
 - Variância amostral (s²):
 
          Σ (xi - x̄)²
-s²  = ----------------
+s²  = ───────────────
           n - 1
 
 - Desvio padrão (s):
@@ -156,8 +156,8 @@ s = √(s²)
 - Coeficiente de variação (CV):
 
        s
-CV = ---- * 100
-      x̄
+CV = ──── * 100
+       x̄
 
 --------------------------------------------------
 Estatística Descritiva
