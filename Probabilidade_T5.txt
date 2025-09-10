@@ -1,0 +1,97 @@
+Distribuições de Probabilidade
+==============================
+
+1) Distribuição de Bernoulli
+----------------------------
+- Dois resultados possíveis: sucesso (1) e fracasso (0).
+- Definição:
+    P(X = 1) = p
+    P(X = 0) = 1 - p
+- Valor esperado: E[X] = p
+- Variância: Var(X) = p · (1 - p)
+
+2) Distribuição Binomial
+------------------------
+- Definição:
+                n!
+P(X = k) = ───────────── · p^k · (1-p)^(n-k)
+            k! · (n - k)!
+
+- Valor esperado: E[X] = n · p
+- Variância: Var(X) = n · p · (1-p)
+
+3) Distribuição Geométrica
+--------------------------
+- Definição:
+P(X = k) = (1-p)^(k-1) · p
+
+- Valor esperado: E[X] = 1/p
+- Variância: Var(X) = (1-p)
+                      ───────
+                        p²
+
+4) Distribuição de Poisson
+--------------------------
+- Definição:
+              λ^k · e^(-λ)
+P(X = k) = ────────────────
+                   k!
+
+- Valor esperado: E[X] = λ
+- Variância: Var(X) = λ
+
+5) Distribuição Hipergeométrica
+-------------------------------
+- Definição:
+              C(r, k) · C(N-r, n-k)
+P(X = k) = ─────────────────────────
+                   C(N, n)
+
+  onde:  C(a,b) =      a!
+                   ─────────────
+                   b! · (a - b)!
+
+- Valor esperado: E[X] = n · (r / N)
+
+6) Distribuição Uniforme Contínua
+---------------------------------
+- Definição da densidade:
+          1
+f(x) = ───────── ,   a ≤ x ≤ b
+         b - a
+
+f(x) = 0 , caso contrário
+
+- Valor esperado: E[X] = (a + b) / 2
+- Variância: Var(X) = (b - a)²
+                      ────────
+                        12
+
+7) Distribuição Exponencial
+---------------------------
+- Definição da densidade:
+f(x) = λ · e^(-λx) ,  x ≥ 0
+f(x) = 0           ,  x < 0
+
+- Valor esperado: E[X] = 1
+                         ─
+                         λ
+
+- Variância: Var(X) = 1
+                      ───
+                      λ²
+
+8) Distribuição Normal
+----------------------
+- Definição da densidade:
+            1
+f(x) = ───────────· e ^( - (x - μ)² / (2σ²) )
+        σ · √(2π)
+
+- Valor esperado: E[X] = μ
+- Variância: Var(X) = σ²
+
+- Padronização:
+     X - μ
+Z = ──────
+       σ

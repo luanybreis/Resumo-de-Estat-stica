@@ -1,0 +1,189 @@
+Introdução à Estatística
+--------------------------------------------------
+Definição
+Estatística é a ciência que coleta, organiza, analisa e interpreta dados para apoiar a tomada de decisões.
+
+--------------------------------------------------
+Conceitos básicos
+- Dado estatístico: matéria-prima da estatística (observações, contagens, medições ou respostas).
+- População: conjunto de todos os elementos de interesse.
+- Amostra: subconjunto representativo da população.
+- Parâmetro: medida numérica que descreve uma característica da população.
+- Estatística: medida numérica que descreve uma característica da amostra.
+- Fenômeno estatístico: qualquer evento ou situação passível de análise estatística.
+
+--------------------------------------------------
+Ramos da Estatística
+- Estatística Descritiva: resume e organiza os dados por meio de tabelas, gráficos e medidas (média, mediana, moda, desvio padrão etc.).
+- Estatística Inferencial: usa amostras para tirar conclusões sobre populações, com base em probabilidade.
+
+--------------------------------------------------
+Classificação dos dados
+- Qualitativos (categóricos): atributos ou categorias.
+  - Nominais: apenas nomeiam (sexo, estado civil).
+  - Ordinais: possuem ordem (escolaridade, grau de dor).
+- Quantitativos (numéricos): valores numéricos.
+  - Discretos: números inteiros (nº de filhos, peças defeituosas).
+  - Contínuos: valores reais (altura, tempo, peso).
+- Variável aleatória: assume valores influenciados pelo acaso.
+
+--------------------------------------------------
+Planejamento estatístico
+Etapas de um estudo:
+1. Definir variáveis e população de interesse.
+2. Desenvolver plano de coleta de dados.
+3. Coletar os dados.
+4. Organizar e descrever (estatística descritiva).
+5. Interpretar e inferir sobre a população (estatística inferencial).
+6. Identificar possíveis erros.
+
+--------------------------------------------------
+Técnicas de coleta
+- Observacional: apenas observar sem interferir.
+- Experimental: aplicar tratamento e observar efeitos (ex: vacinas, placebo).
+- Simulação: uso de modelos matemáticos/computacionais.
+- Levantamento/pesquisa: coleta de dados por questionários.
+
+--------------------------------------------------
+Amostragem
+- Censo: coleta de toda a população (caro e difícil).
+- Amostragem: coleta de parte da população.
+
+Tipos de amostragem probabilística
+- Aleatória simples: todos têm mesma chance de serem escolhidos.
+- Estratificada: divide em subgrupos homogêneos (faixa etária, renda) e sorteia proporcionalmente.
+- Conglomerados: sorteio de grupos inteiros (escolas, domicílios).
+- Sistemática: seleção em intervalos fixos a partir de um ponto aleatório.
+
+Tipos de amostragem não-probabilística
+- Conveniência: escolhidos os elementos mais acessíveis.
+- Quota: divisão por grupos com proporções pré-estabelecidas.
+- Bola de neve: participantes indicam novos membros (populações de difícil acesso).
+
+--------------------------------------------------
+Tamanho da amostra
+Depende do:
+- tamanho da população (N),
+- erro amostral tolerável (E0),
+- nível de confiança.
+
+Fórmulas usuais:
+- Aproximação inicial:
+
+       1
+n0 = -----
+      E0²
+
+- Ajuste com população finita:
+
+       N * n0
+n  = ---------
+      N + n0
+
+--------------------------------------------------
+Distribuição de Frequência
+Organiza os dados em tabelas para facilitar análise.
+
+Tipos de frequência:
+- Frequência absoluta (fi): número de ocorrências.
+- Frequência acumulada (Fi): soma das frequências até a classe correspondente.
+  Fi = f1 + f2 + ... + fi
+
+- Frequência relativa (fri):
+
+     fi
+fri = ----
+      n
+
+- Frequência relativa percentual (fri%):
+
+       fi
+fri(%) = ---- * 100
+        n
+
+- Frequência acumulada relativa:
+
+     Fi
+Fri = ----
+      n
+
+Exemplo com notas (n=20):
+5, 6, 6, 7, 8, 8, 8, 9, 5, 7, 6, 9, 10, 5, 7, 8, 6, 7, 9, 10
+
+Tabela de frequência:
+Nota | fi | Fi | fri  | fri%
+5    | 3  | 3  | 0,15 | 15%
+6    | 4  | 7  | 0,20 | 20%
+7    | 4  | 11 | 0,20 | 20%
+8    | 4  | 15 | 0,20 | 20%
+9    | 3  | 18 | 0,15 | 15%
+10   | 2  | 20 | 0,10 | 10%
+Total| 20 | -- | 1,00 | 100%
+
+--------------------------------------------------
+Medidas de Tendência Central
+- Média aritmética simples:
+
+       Σ xi
+x̄ = -------
+        n
+
+- Média ponderada:
+
+       Σ (xi * wi)
+x̄ = -------------
+       Σ wi
+
+- Moda (Mo): valor mais frequente.
+- Mediana (Md): valor que divide a amostra em 50% inferior e 50% superior.
+
+--------------------------------------------------
+Medidas de Dispersão
+- Amplitude total (AT):
+
+AT = Xmax - Xmin
+
+- Variância amostral (s²):
+
+         Σ (xi - x̄)²
+s²  = ----------------
+          n - 1
+
+- Desvio padrão (s):
+
+s = √(s²)
+
+- Coeficiente de variação (CV):
+
+       s
+CV = ---- * 100
+      x̄
+
+--------------------------------------------------
+Estatística Descritiva
+- Tabelas de distribuição de frequências.
+- Séries estatísticas: cronológica (tempo), geográfica (lugares), específica (categorias).
+- Gráficos principais:
+  - Barras e colunas → qualitativas ou discretas.
+  - Setores (pizza) → proporções.
+  - Linhas → séries temporais.
+  - Histograma → variáveis quantitativas contínuas.
+  - Boxplot → dispersão e outliers.
+  - Gráfico Kiviat → múltiplas variáveis.
+  - q-q plot → aderência à distribuição (ex: normalidade).
+
+--------------------------------------------------
+Tratamento dos dados
+- Limpeza: remover duplicidades, corrigir erros, padronizar registros.
+- Enriquecimento: complementar informações com novas variáveis (ex: cadastro de clientes).
+
+--------------------------------------------------
+Aplicações da Estatística
+- Saúde: eficácia de vacinas, estudos clínicos.
+- Economia: inflação, desemprego, PIB.
+- Indústria: qualidade, testes de produção.
+- Meteorologia: probabilidade de chuva.
+- Ciências sociais: pesquisas eleitorais, censos.
+- Engenharia: teoria das filas, confiabilidade de sistemas.
+- Computação: redes, big data, ciência de dados.
+- Seguros e finanças: cálculo de riscos, definição de tarifas.

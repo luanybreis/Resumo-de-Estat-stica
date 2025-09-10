@@ -1,0 +1,44 @@
+Resumo: Variáveis Aleatórias em Estatística
+===========================================
+
+Uma variável aleatória (v.a.) é uma função que associa cada resultado
+possível de um experimento a um número real. O espaço amostral pode
+não ser numérico, mas atribuímos valores numéricos para facilitar a análise.
+
+- Variáveis Aleatórias
+  • Representadas por letras maiúsculas (X, Y, Z).
+  • Seus valores são representados por letras minúsculas (x, y, z).
+  • Formalmente: X: S → R, onde S é o espaço amostral.
+
+- Variáveis Aleatórias Discretas
+  • Assumem valores finitos ou infinitos numeráveis (0, 1, 2, ...).
+  • Exemplos: número de ligações em um dia, número de partículas emitidas.
+  • A cada valor xi está associada uma probabilidade pi.
+  • Condições:
+      0 ≤ pi ≤ 1
+      Σ pi = 1
+  • Função de probabilidade (f.p.): P(X = xi) = pi
+
+- Função de Distribuição
+  • Conjunto de todas as probabilidades de X.
+  • Função de Massa de Probabilidade (pmf): P(X = x).
+  • Função de Distribuição Acumulada (cdf):
+      F(x) = P(X ≤ x) = Σ P(xi), para xi ≤ x.
+
+- Valor Esperado (Média)
+  • Mede a tendência central dos valores de X.
+  • Definição:
+      E(X) = Σ xi · P(xi)
+
+- Variância
+  • Mede a dispersão dos valores em torno da média.
+  • Definição:
+      Var(X) = E(x²) - [E(X)]²
+
+Resumo Final
+------------
+Variáveis aleatórias permitem representar fenômenos incertos em termos
+numéricos. No caso das discretas, descrevemos todos os valores possíveis
+e suas probabilidades, construindo a distribuição de probabilidade. A média
+esperada resume o valor típico de X, enquanto a variância mede sua
+variabilidade.

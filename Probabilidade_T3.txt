@@ -1,0 +1,150 @@
+Introdução à Probabilidade
+--------------------------------------------------
+Conceito
+A probabilidade estuda a chance de ocorrência de eventos em experimentos aleatórios.
+
+- Experimento de probabilidade: ação ou tentativa com resultados observáveis.
+- Resultado: resultado de uma única tentativa.
+- Espaço amostral (Ω): conjunto de todos os resultados possíveis.
+- Evento: subconjunto do espaço amostral.
+
+Tipos de Experimentos:
+- Determinístico: resultado certo (ex.: pedra cai no chão).
+- Aleatório: resultado incerto (ex.: lançar um dado).
+
+--------------------------------------------------
+Exemplos de Espaço Amostral
+
+Experimento: Lançar dado  
+Ω = {1,2,3,4,5,6} (Quantitativo discreto)
+
+Experimento: Entrada de clientes 14–16h  
+Ω = {(x,y): 14 < x < 16} (Quantitativo contínuo)
+
+Experimento: Cor do carro  
+Ω = {Branco, Azul, Vermelho,...} (Qualitativo)
+
+Eventos simples: acontecem com apenas um resultado (ex.: A={6} no dado)  
+Eventos compostos: possuem mais de um resultado (ex.: B={2,4,6})
+
+--------------------------------------------------
+Probabilidade
+
+Probabilidade Clássica:
+
+       número de resultados favoráveis
+P(E) = -------------------------------
+        número total de resultados
+
+Ex.: Lançar um dado
+- Evento A: sair 3  
+
+       1
+P(A) = -
+       6
+
+- Evento B: sair < 5  
+
+       4
+P(B) = -
+       6
+
+Probabilidade Empírica:
+
+        frequência do evento
+P(E) = -----------------------
+         total de observações
+
+Probabilidade Subjetiva: baseada em intuição ou estimativa, sem cálculo direto.  
+Ex.: Médico estima 90% de chance de recuperação de paciente.
+
+--------------------------------------------------
+Operações com Eventos
+
+Complemento:
+A' = {x ∈ Ω | x ∉ A}  
+P(A') = 1 - P(A)
+
+União:
+A ∪ B = {x | x ∈ A ou x ∈ B}  
+
+P(A ∪ B) = P(A) + P(B) - P(A ∩ B)
+
+Interseção:
+A ∩ B = {x | x ∈ A e x ∈ B}  
+- Independentes: P(A ∩ B) = P(A) * P(B)
+
+--------------------------------------------------
+Probabilidade Condicional
+
+          P(A ∩ B)
+P(B|A) = ---------
+            P(A)
+
+Teorema de Bayes:
+
+        P(B|A) * P(A)
+P(A|B) = -------------
+          P(B)
+
+--------------------------------------------------
+Métodos de Enumeração
+
+Regra da multiplicação:  
+Se um evento ocorre de m maneiras e outro de n maneiras:  
+Total = m * n
+
+Permutação (ordem importa):
+
+         N!
+P_N^n = -----
+        (N-n)!
+
+Combinação (ordem não importa):
+
+          N!
+C_N^n = -------
+       n! * (N-n)!
+
+--------------------------------------------------
+Exemplos Clássicos
+
+Topa ou não Topa: 26 maletas, probabilidade de ≥ R$100.000  
+
+     5
+P = ---- ≈ 0,19
+     26
+
+Mega-sena: 6 números de 1 a 60  
+
+           60!
+C_60^6 = --------- = 50.063.860
+          6! * 54!
+
+Probabilidade de acertar:  
+
+       1
+P = ---------
+    50.063.860
+
+Códigos de segurança (4 dígitos 0–9):
+- Repetição permitida: 10^4 = 10.000 códigos
+- Sem repetição: 10*9*8*7 = 5.040 códigos
+
+--------------------------------------------------
+Eventos Mutuamente Exclusivos
+A ∩ B = ∅  
+Ex.: Par e ímpar no lançamento de um dado
+
+--------------------------------------------------
+Propriedades das Operações
+
+a) Idempotentes: A ∩ A = A, A ∪ A = A  
+b) Comutativas: A ∪ B = B ∪ A, A ∩ B = B ∩ A  
+c) Associativas: A ∩ (B ∩ C) = (A ∩ B) ∩ C  
+d) Distributivas: A ∪ (B ∩ C) = (A ∪ B) ∩ (A ∪ C)  
+e) Absorção: A ∪ (A ∩ B) = A  
+f) Identidade: A ∩ Ω = A, A ∪ Ω = Ω, A ∩ ∅ = ∅, A ∪ ∅ = A  
+g) Complementares: (A ∪ B)' = A' ∩ B', (A ∩ B)' = A' ∪ B'
+
+--------------------------------------------------

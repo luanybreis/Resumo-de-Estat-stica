@@ -1,0 +1,163 @@
+Distribuição de Frequência – Resumo
+--------------------------------------------------
+1. Definições básicas:
+
+- Frequência absoluta (fi): número de elementos em cada classe.
+- Frequência acumulada (Fi): soma das frequências até a classe i.
+  Fi = f1 + f2 + ... + fi
+- Frequência relativa (fri):
+
+     fi
+fri = ----
+      n
+
+- Frequência percentual (fri%):
+
+       fi
+fri(%) = ---- * 100
+        n
+
+- Frequência percentual acumulada (Fi%): soma das porcentagens até a classe i.
+
+--------------------------------------------------
+2. Construção da distribuição de frequência:
+
+- Ordenar os dados em ordem crescente.
+- Definir número de classes (entre 5 e 20).
+- Determinar valores mínimo e máximo → amplitude total:
+
+A = Xmax - Xmin
+
+- Calcular amplitude da classe:
+
+       A
+h = ----
+       k
+
+(usando função teto para arredondar)
+
+- Marcar contagens (tally marks) e calcular fi para cada classe.
+
+--------------------------------------------------
+3. Exemplo prático (idades dos alunos):
+
+Classes: k = 5  
+Amplitude total: A = 27 - 18 = 9  
+
+       9
+h = ---- ≈ 2
+       5
+
+Tabela exemplo:
+
+Idade   | fi | Fi | fri  | fri%  | Fi%
+[18,20) | 12 | 12 | 0,40 | 40,00 | 40,00
+[20,22) | 11 | 23 | 0,37 | 36,67 | 76,67
+[22,24) |  4 | 27 | 0,13 | 13,33 | 90,00
+[24,26) |  1 | 28 | 0,03 |  3,33 | 93,33
+[26,28] |  2 | 30 | 0,07 |  6,67 |100,00
+
+--------------------------------------------------
+4. Medidas de tendência central:
+
+- Média populacional:
+
+       Σ xi
+μ = -------
+        n
+
+- Média para dados agrupados:
+
+       Σ (fi * Xi)
+μ = -------------
+        n
+
+- Mediana: valor central dos dados; para dados agrupados, usar fórmula com limites de classe.
+- Moda: valor mais frequente; para dados agrupados, fórmula envolvendo fi, fi-1 e fi+1.
+- Média ponderada:
+
+       Σ (wi * xi)
+x̄ = -------------
+       Σ wi
+
+- Média harmônica:
+
+       n
+x̄h = -----
+     Σ (1/xi)
+
+- Média geométrica:
+
+       n√(Π xi)
+
+--------------------------------------------------
+5. Medidas de dispersão:
+
+- Amplitude total:
+
+A = Xmax - Xmin
+
+- Variância populacional:
+
+         Σ (xi - μ)²
+σ²  = ----------------
+            N
+
+- Variância amostral:
+
+         Σ (xi - x̄)²
+S²  = ----------------
+           n - 1
+
+- Desvio padrão:
+
+σ = √(σ²)   ou   S = √(S²)
+
+- Coeficiente de variação:
+
+       σ
+CV = ----   ou   CV = S / x̄
+       μ
+
+--------------------------------------------------
+6. Separatrizes (medidas de posição):
+
+- Quartis (Q1, Q2, Q3): dividem os dados em 4 partes.
+- Decis (D1 a D9): dividem em 10 partes.
+- Percentis (P1 a P99): dividem em 100 partes.
+- Fórmulas específicas para dados agrupados.
+
+--------------------------------------------------
+7. Assimetria e Curtose:
+
+- Coeficiente de assimetria de Pearson:
+
+x̄ - Mo
+As = ----
+       s
+
+- Curtose (C):
+
+      Q3 - Q1
+C = -------------
+     2(P90 - P10)
+
+Interpretação:
+- C < 0,263 → Leptocúrtica (mais afilada)
+- C = 0,263 → Mesocúrtica (normal)
+- C > 0,263 → Platicúrtica (mais achatada)
+
+--------------------------------------------------
+8. Representação gráfica adequada:
+
+- Dados qualitativos: barras, colunas ou setores (pizza).
+- Variáveis discretas: gráficos de linhas, colunas ou hastes.
+- Variáveis contínuas: histogramas e polígonos de frequência.
+- Séries temporais: linhas ou colunas.
+- Séries geográficas: colunas, barras ou setores.
+
+--------------------------------------------------
+Resumo final:
+
+Distribuições de frequência permitem organizar os dados em tabelas e gráficos, tornando mais fácil a análise.  
+Através delas, calculamos medidas de tendência central, dispersão, separatrizes, assimetria e curtose, fornecendo um panorama completo sobre o comportamento dos dados.
