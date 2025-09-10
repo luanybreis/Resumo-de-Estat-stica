@@ -157,7 +157,6 @@ Interpretação:
 - Séries geográficas: colunas, barras ou setores.
 
 --------------------------------------------------
-Resumo final:
 
 Distribuições de frequência permitem organizar os dados em tabelas e gráficos, tornando mais fácil a análise.  
 Através delas, calculamos medidas de tendência central, dispersão, separatrizes, assimetria e curtose, fornecendo um panorama completo sobre o comportamento dos dados.
