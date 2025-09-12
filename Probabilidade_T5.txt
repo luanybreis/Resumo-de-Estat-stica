@@ -1,9 +1,11 @@
-Distribuições de Probabilidade
+Resumo: Distribuições de Probabilidade
 ==============================
 
 1) Distribuição de Bernoulli
 ----------------------------
+- Contexto: Modela uma ÚNICA tentativa com dois resultados possíveis.
 - Dois resultados possíveis: sucesso (1) e fracasso (0).
+- Parâmetro: p (probabilidade de sucesso).
 - Definição:
     P(X = 1) = p
     P(X = 0) = 1 - p
@@ -12,19 +14,22 @@ Distribuições de Probabilidade
 
 2) Distribuição Binomial
 ------------------------
+- Contexto: Modela o número de sucessos k em n tentativas de Bernoulli INDEPENDENTES.
+- Parâmetros: n (nº de tentativas), p (prob. de sucesso).
 - Definição:
                 n!
 P(X = k) = ───────────── · p^k · (1-p)^(n-k)
             k! · (n - k)!
-
 - Valor esperado: E[X] = n · p
 - Variância: Var(X) = n · p · (1-p)
 
 3) Distribuição Geométrica
 --------------------------
-- Definição:
+- Contexto: Modela o número de tentativas (k) até o PRIMEIRO sucesso.
+- Parâmetro: p (probabilidade de sucesso).
+- Definição: (Na forma do nº de tentativas até o 1º sucesso)
 P(X = k) = (1-p)^(k-1) · p
-
+- Observação: Existe outra parametrização que conta o nº de falhas antes do 1º sucesso.
 - Valor esperado: E[X] = 1/p
 - Variância: Var(X) = (1-p)
                       ───────
@@ -32,36 +37,39 @@ P(X = k) = (1-p)^(k-1) · p
 
 4) Distribuição de Poisson
 --------------------------
+- Contexto: Modela o número de eventos raros que ocorrem em um intervalo de tempo, área, volume, etc.
+- Parâmetro: λ (taxa média de ocorrência).
 - Definição:
               λ^k · e^(-λ)
 P(X = k) = ────────────────
-                 k!
-
+                   k!
 - Valor esperado: E[X] = λ
 - Variância: Var(X) = λ
 
 5) Distribuição Hipergeométrica
 -------------------------------
+- Contexto: Modela o número de sucessos (k) em n extrações SEM REPOSIÇÃO de uma população finita.
+- Parâmetros: N (tamanho da pop.), r (nº de sucessos na pop.), n (nº de tentativas).
 - Definição:
               C(r, k) · C(N-r, n-k)
 P(X = k) = ─────────────────────────
                    C(N, n)
-
   onde:  C(a,b) =      a!
                    ─────────────
                    b! · (a - b)!
-
 - Valor esperado: E[X] = n · (r / N)
+- Variância: Var(X) = n * (r/N) * (1 - r/N) * ((N - n)/(N - 1))
+  (O fator (N-n)/(N-1) é o fator de correção de população finita.)
 
 6) Distribuição Uniforme Contínua
 ---------------------------------
+- Contexto: Modela resultados onde qualquer valor em um intervalo [a, b] é igualmente provável.
+- Parâmetros: a (limite inferior), b (limite superior).
 - Definição da densidade:
           1
 f(x) = ───────── ,   a ≤ x ≤ b
          b - a
-
 f(x) = 0 , caso contrário
-
 - Valor esperado: E[X] = (a + b) / 2
 - Variância: Var(X) = (b - a)²
                       ────────
@@ -69,29 +77,25 @@ f(x) = 0 , caso contrário
 
 7) Distribuição Exponencial
 ---------------------------
+- Contexto: Modela o tempo entre eventos em um processo de Poisson. Não possui memória.
+- Parâmetro: λ (taxa de ocorrência).
 - Definição da densidade:
 f(x) = λ · e^(-λx) ,  x ≥ 0
 f(x) = 0           ,  x < 0
+- Valor esperado: E[X] = 1/λ
+- Variância: Var(X) = 1/λ²
 
-- Valor esperado: E[X] = 1
-                         ─
-                         λ
-
-- Variância: Var(X) =  1
-                      ───
-                       λ²
-
-8) Distribuição Normal
-----------------------
+8) Distribuição Normal (Gaussiana)
+----------------------------------
+- Contexto: Modela fenômenos naturais, erros de medida, etc. (Teorema Central do Limite).
+- Parâmetros: μ (média, determina o centro), σ (desvio padrão, determina a dispersão).
 - Definição da densidade:
             1
-f(x) = ───────────· e ^( - (x - μ)² / (2σ²) )
+f(x) = ───────────· e^( - (x - μ)² / (2σ²) )
         σ · √(2π)
-
 - Valor esperado: E[X] = μ
 - Variância: Var(X) = σ²
-
-- Padronização:
+- Padronização: (Cria uma Normal com média 0 e variância 1)
      X - μ
 Z = ──────
-      σ
+       σ
