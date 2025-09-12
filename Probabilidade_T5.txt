@@ -1,4 +1,4 @@
-Resumo: Distribuições de Probabilidade
+Distribuições de Probabilidade
 ==============================
 
 1) Distribuição de Bernoulli
